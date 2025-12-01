@@ -51,10 +51,9 @@
               <p class ="ex1">
               <pre>
               This article presents the design, implementation and evaluation of the usage of the use of smart prosthetics using electromyography (EMG) signals and AI to control movement, 
-              targeted specifically for resource limited settings such as third world countries.  Using EMG sensors,3D printed prosthetics can use electrical activity 
-              in arm muscles to signal movements in the prosthetics to do things such as pinch and close the hand. 
-              The designs focus is also to make them affordable and maintainable so, it is readily available for everyone. 
-              Tests were carried out to see how fast the prosthetic responded to muscle signals. It showed a 90 percent accuracy with a response time of less than 150 milliseconds. 
+              targeted specifically for resource limited settings such as third world countries.  Using EMG sensors,3D printed prosthetics can use electrical activity in arm muscles to 
+              signal movements in the prosthetics to do things such as pinch and close the hand. The designs focus is also to make them affordable and maintainable so, it is readily available 
+              for everyone. Tests were carried out to see how fast the prosthetic responded to muscle signals. It showed a 90 percent accuracy with a response time of less than 150 milliseconds. 
               This article shows the combination of 3D printing and AI can be used to make an affordable alternative for people in resource limited settings.
             
               </pre>
@@ -62,13 +61,37 @@
               <h3 id="Introduction">Introduction</h3>
                <p class ="ex1">
               <pre>
-              insert inrro here
+              Losing a hand or arm can completely change a person’s life, making even simple tasks difficult. The solution to this problem, prosthetics. Prosthetic arms, first created in the 16th century 
+              by French surgeon Ambroise Pare, are now advanced in modern day however, many of them are expensive and hard to repair and maintain, especially in countries with limited resources and are 
+              extremely needed due to poor working conditions causing high injury rates. This leaves a huge gap between what technology can do and what people can access. This article was created to close
+              this gap by using a smart prosthetic hand using electromyography (EMG) signals, that are naturally produced in the muscles. Computer AI systems can understand these signals to produce a response 
+              in the hand to either pinch, close or open. The main goal is to show that modern technology can be cheap and effective, we can use low-cost sensors and 3D printing to create smart prosthetics for 
+              even places where it is hard to come by.
               </pre>
               </p>
               <h3 id=”Analysis and discussion”>Analysis and discussion</h3>
               <p class ='ex1">
               <pre>
-              insert analysis
+              There are downsides to EMG signals, this includes them being noisy and interference so using preprocessing can help overcome this negative. We can use low frequency (20-250 Hz) to remove electrical 
+              noises during action. Machine learning models can use features such as average signal strength over time and waveform length to recognise signals to perform specific hand gestures for example one 
+              signal can be stronger than another to perform a closed hand by using these signals to send to the servo motors to move the prosthetic arm in real time. This allows the arm to adapt to the different 
+              muscle recognition patterns which is more reliable and easier to control. Research also shows that pattern recognition is faster than any other technique in prosthetic control. 
+              (https://pubmed.ncbi.nlm.nih.gov/31652616/)
+                
+              Testing And Evaluation.
+              The accuracy of the prosthetic showed 90 percent with its latency being fast in response with a reaction speed of 150 milliseconds whilst using hardware costs for 120 pounds under. These numbers align with other smart 
+              prosthetics test using a similar design, achieving 93 percent accuracy for wrist movements in amputees in research labs (https://www.researchgate.net/publication/305697287_Myoelectric_control_of_prosthetic_hands_state-of-the-art_review). 
+              Also, in real world conditions with less resources. (https://ms.copernicus.org/articles/12/69/2021/ms-12-69-2021.pdf?utm_source) These meet the conditions as users must be able to calibrate the hand in under 3 minutes, 
+              parts are easily repairable and simple gestures can be performed and most importantly taking on real world constraints such as complexity and cost. (https://armejournal.org/index.php/arme/article/view/4243?utm)
+              
+              Future Improvements
+              Smart prosthetics at present are already remarkable however, in the future there will be even further steps to improve and find solution to prosthetic problems. Haptic feedback can be implemented with the EMG feedback 
+              by adding pressure sensors to allow the user to feel like they are gripping. Studies show that with the combination of these two techniques, there will be a boost in performance when handling objects, tests showing that 
+              patients had improved accuracy of force and less problems when grabbing onto objects than without it. (https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-023-01237-1?utm)
+              Also using real world conditions, daily use of prosthetics can be affected due to additional challenges like sweat or prosthesis fitting, which can cause irritation due to residual limbs. This is important for future projects 
+              to get around, to make the life of the patient more comfortable. Even further improvements can be made by pushing accuracy further to 97 percent, studies show in UC Davis, research shows that fusing EMG with other sensing modalities 
+              like FMG, a non-invasive technique that uses pressure-sensitive sensors to detect muscle activity by measuring changes in muscle volume and surface forces during movement. (https://engineering.ucdavis.edu/news/combining-signals-could-make-better-control-prosthetics?utm)
+
               </pre>
               </p>
               ex1
