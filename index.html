@@ -100,7 +100,7 @@
               signal can be stronger than another to perform a closed hand by using these signals to send to the servo motors to move the prosthetic arm in real time. This allows the hand to adapt to the different 
               muscle recognition patterns which is more reliable and easier to control. Research also shows that pattern recognition is faster than any other technique in prosthetic control. <a href=https://pubmed.ncbi.nlm.nih.gov/31652616/>Nawadita Paruajuli (2019)</a>
                 
-              Testing And Evaluation.
+              Testing And Evaluation
               The accuracy of the prosthetic hand using other studies with similar ideas showed that, 90 percent with its latency being fast in response with a reaction speed of 150 milliseconds whilst using hardware costs for 120 pounds under. These numbers align with other smart 
               prosthetics test using a similar design, achieving 93 percent accuracy for wrist movements in amputees in research labs <a href=https://www.researchgate.net/publication/305697287_Myoelectric_control_of_prosthetic_hands_state-of-the-art_review>Geethanjali Purushotman (2016)</a>. 
               Also, in real world conditions with less resources.<a href=https://ms.copernicus.org/articles/12/69/2021/ms-12-69-2021.pdf?utm_source>Saygin Siddiq Ahmed (2021)</a> These meet the conditions as users must be able to calibrate the hand in under 3 minutes, 
@@ -246,8 +246,10 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const IntroductionCount = displayWordCount("Introduction");
+    const AnalysisCount = displayWordCount("Analysis and Discussion");
+    const AbstractCount = displayWordCount("Abstract");
+    const FutureImprovementsCount = displayWordCount("Future Improvements");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
