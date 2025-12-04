@@ -250,8 +250,9 @@
     const AnalysisCount = displayWordCount("Analysis and Discussion");
     const AbstractCount = displayWordCount("Abstract");
     const FutureImprovementsCount = displayWordCount("Future Improvements");
+    const TestingEvaluationCount = displayWordCount("Testing And Evaluation");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + AbstractCount + FutureImprovementsCount + TestingEvaluationCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
