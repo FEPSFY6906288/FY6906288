@@ -72,6 +72,7 @@
                   <img src="prosthetic hand.jpg" alt="Banner" width="400" height="200">
               <h3 id="Abstract">Abstract</h3>
               <p class ="ex1">
+               <pre id="Abstract_InText"></pre>
               <pre>
               This article presents the design, implementation and evaluation of the usage of the use of smart prosthetics using electromyography (EMG) signals and AI to control movement, 
               targeted specifically for resource limited settings such as third world countries.  Using EMG sensors,3D printed prosthetics can use electrical activity in arm muscles to 
@@ -83,6 +84,7 @@
               </p>
               <h3 id="Introduction">Introduction</h3>
                <p class ="ex1">
+                 <pre id="Introduction_InText"></pre>
               <pre>
               Losing a hand can completely change a person’s life, making even simple tasks difficult. The solution to this problem, prosthetics. Prosthetic hands, first created in the 16th century 
               by French surgeon Ambroise Pare, are now advanced in modern day however, many of them are expensive and hard to repair and maintain, especially in countries with limited resources and are 
@@ -94,6 +96,7 @@
               </p>
               <h3 id="Analysis and Discussion">Analysis and Discussion</h3>
                <p class ="ex1">
+                 <pre id="Analysis_InText"></pre>
               <pre>
               There are downsides to EMG signals, this includes them being noisy and interference so using preprocessing can help overcome this negative. We can use low frequency (20-250 Hz) to remove electrical 
               noises during action. Machine learning models can use features such as average signal strength over time and waveform length to recognise signals to perform specific hand gestures for example one 
@@ -101,12 +104,14 @@
               muscle recognition patterns which is more reliable and easier to control. Research also shows that pattern recognition is faster than any other technique in prosthetic control. <a href=https://pubmed.ncbi.nlm.nih.gov/31652616/>Nawadita Paruajuli (2019)</a>
                 
               Testing And Evaluation
+                
               The accuracy of the prosthetic hand using other studies with similar ideas showed that, 90 percent with its latency being fast in response with a reaction speed of 150 milliseconds whilst using hardware costs for 120 pounds under. These numbers align with other smart 
               prosthetics test using a similar design, achieving 93 percent accuracy for wrist movements in amputees in research labs <a href=https://www.researchgate.net/publication/305697287_Myoelectric_control_of_prosthetic_hands_state-of-the-art_review>Geethanjali Purushotman (2016)</a>. 
               Also, in real world conditions with less resources.<a href=https://ms.copernicus.org/articles/12/69/2021/ms-12-69-2021.pdf?utm_source>Saygin Siddiq Ahmed (2021)</a> These meet the conditions as users must be able to calibrate the hand in under 3 minutes, 
               parts are easily repairable and simple gestures can be performed and most importantly taking on real world constraints such as complexity and cost. <a href=”https://armejournal.org/index.php/arme/article/view/4243?utm”>Pratik Gurav (2024)</a>
               
               Future Improvements
+                
               Smart prosthetics at present are already remarkable however, in the future there will be further steps to improve and find solutions to prosthetic problems. Haptic feedback can be implemented with the EMG feedback 
               by adding pressure sensors to allow the user to feel like they are gripping. Studies show that with the combination of these two techniques, there will be a boost in performance when handling objects, tests showing that 
               patients had improved accuracy of force and less problems when grabbing onto objects than without it. <a href=(https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-023-01237-1?utm)>Jack Tchimino (2023)</a>
@@ -246,13 +251,11 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction");
-    const AnalysisCount = displayWordCount("Analysis and Discussion");
-    const AbstractCount = displayWordCount("Abstract");
-    const FutureImprovementsCount = displayWordCount("Future Improvements");
-    const TestingEvaluationCount = displayWordCount("Testing And Evaluation");
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
+    const AbstractCount = displayWordCount("Abstract_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + AbstractCount + FutureImprovementsCount + TestingEvaluationCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + AbstractCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
