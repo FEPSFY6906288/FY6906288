@@ -111,7 +111,13 @@ Also using real world conditions, daily use of prosthetics can be affected due t
 to fix, to make the life of the patient more comfortable. Even further improvements can be made by pushing accuracy further to 97 percent, studies in UC Davis research shows that fusing EMG with other sensing modalities 
 like FMG, creat a non-invasive technique that uses pressure-sensitive sensors to detect muscle activity by measuring changes in muscle volume and surface forces during movement. 
 <a href=https://engineering.ucdavis.edu/news/combining-signals-could-make-better-control-prosthetics?utm>Andy Fell 2025</a>
-</pre>       
+</pre>
+
+<h3 id="Conclusion">Conclusion</h3>
+<pre id="Conclusion_InText">
+In summary, this work produces a practical and affordable and adaptive way for prosthetic hand system that uses EMG signals that can interpret muscle signals and muscle movement by a 3D printed prosthetic which is 
+more affordable and cheaper under 120 pounds, which can help patients in resource limited countries to be able to afford, improving quality of life.
+</pre>
   
                 <img src="3d-printed-prosthetic-1.avif" alt="Banner" width="400" height="200">
   <tr>
@@ -248,8 +254,9 @@ like FMG, creat a non-invasive technique that uses pressure-sensitive sensors to
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
     const AbstractCount = displayWordCount("Abstract_InText");
+    const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + AbstractCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + AbstractCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
